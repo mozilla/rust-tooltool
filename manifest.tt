@@ -1,0 +1,51 @@
+[
+{
+"size": 587, 
+"visibility": "public", 
+"digest": "c1521bd9fc10a529aa32a8c64fe23dd84515ad650475dadd5befc69d77e9e5150ae343b75403e899926b49e78162042c946f57c0c98328c23a29afac2fcc11d7", 
+"algorithm": "sha512", 
+"filename": "setup.sh"
+}, 
+{
+"size": 101601508, 
+"visibility": "public", 
+"digest": "310ef5b4d1c2ba3904606305859c538536bf372b7cc95597c8c511cd3ddf0558f2bce44c0d81be1cb39103101a34836c0274988bc110bf12902f484e27bdc781", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-x86_64-unknown-linux-gnu.tar.gz"
+}, 
+{
+"size": 107541645, 
+"visibility": "public", 
+"digest": "af7f4b8bc5b279e428a83bd4da2ad0723924343b81535785acb5ed3ade410a9a00f3b18b651aeae7411a1a99f221e493e33f680505b24550472798d0ecbf3319", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-x86_64-pc-windows-gnu.tar.gz"
+}, 
+{
+"size": 92629244, 
+"visibility": "public", 
+"digest": "9c67b08a31aef451867a5452222d4f6126c390a726897b51aaf58efe3931b1e38c5f1a8dc55a372eca4fececbef8dba6a25d42e3c40a7583fdcd30b895cae722", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-x86_64-apple-darwin.tar.gz"
+}, 
+{
+"size": 103016274, 
+"visibility": "public", 
+"digest": "08e334e44369fed4bae85c7ba92584bf01630d12413e1ad624509976b62e535db58df678220bb1fc3a0690a95ab187cb24bdfcfada198574307b9abdfe8b9bf4", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-i686-unknown-linux-gnu.tar.gz"
+}, 
+{
+"size": 108212756, 
+"visibility": "public", 
+"digest": "3369eff05587f06bbaaac245083bfa9dad0472fe767f4ac9d97f994f39fca4e948277244376a1971a272ff35cfc8f8702c9e1f8c9c9ebe9254592ee602d4ec18", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-i686-pc-windows-gnu.tar.gz"
+}, 
+{
+"size": 92519600, 
+"visibility": "public", 
+"digest": "ed629f83c34589fdfbf5fa3f8ba6cf50bae6876fdd4be351e019199c2a66cd0647d2d916eb0fa74a47bcc9ffcef3d33c2f9ed439730bc8fe2dedebeb647ad299", 
+"algorithm": "sha512", 
+"filename": "rust-1.0.0-i686-apple-darwin.tar.gz"
+}
+]
