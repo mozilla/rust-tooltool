@@ -1,6 +1,6 @@
 #!/bin/sh
 
-URL=https://static/rust-lang.org/dist/
+URL=https://static.rust-lang.org/dist/
 IDX=channel-rust-stable
 
 fetch() {
