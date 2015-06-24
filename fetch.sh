@@ -22,9 +22,9 @@ for res in $(cat ${IDX} | grep ${IDX}); do
 done
 verify ${IDX}
 
-for pkg in $(cat channel-rust-stable | grep '\.tar\.'); do
+for pkg in $(cat ${IDX} | grep '\.tar\.'); do
   fetch ${pkg}
 done
-for pkg in $(cat channel-rust-stable | grep 'tar\.gz$'); do
+for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   verify ${pkg}
 done
