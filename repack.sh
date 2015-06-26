@@ -1,6 +1,10 @@
 #!/bin/sh
 
+# Repack just the rustc subtree from rust releases
+# and add them to the manifest.
+
 IDX=channel-rust-stable
+TOOLTOOL="python ../build-tooltool/tooltool.py"
 
 verify() {
   echo "checking $1 ..."
@@ -13,12 +17,13 @@ verify ${IDX}
 for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   verify ${pkg}
   _base=${pkg%.tar.gz}
-  _target=rustc.tar.xz
+  _target=rustc-${_base#rust-}.tar.xz
   rm -rf ${_base}
   echo "unpacking ${pkg}"
   tar xf ${pkg}
   cd ${_base}
-  echo "repacking ${_base}/${_target}"
-  tar cJf ${_target} rustc/*
+  echo "repacking ${_base}/rustc as ${_target}"
+  tar cJf ../${_target} rustc/*
   cd ..
+  ${TOOLTOOL} add --visibility=public ${_target}
 done
