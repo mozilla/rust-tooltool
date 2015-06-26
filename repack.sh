@@ -29,6 +29,7 @@ for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   cd ${_base}
   echo "repacking ${_base}/rustc as ${_target}"
   tar cJf ../${_target} rustc/*
+  rm -rf ${_base}
   cd ..
   ${TOOLTOOL} add --visibility=public ${_target}
 done
