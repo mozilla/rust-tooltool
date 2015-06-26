@@ -13,6 +13,11 @@ verify() {
   gpg --verify $1.asc
 }
 
+strip_trailing_whitespace() {
+  echo "cleaning $1 ..."
+  cat $1 | sed -e 's/\w*$//' > $1+ && mv $1+ $1
+}
+
 verify ${IDX}
 for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   verify ${pkg}
@@ -27,3 +32,4 @@ for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   cd ..
   ${TOOLTOOL} add --visibility=public ${_target}
 done
+strip_trailing_whitespace manifest.tt
