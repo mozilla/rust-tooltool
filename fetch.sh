@@ -6,6 +6,9 @@ IDX=channel-rust-stable
 fetch() {
   echo "fetching $1 ..."
   curl -Os ${URL}${1}
+  curl -Os ${URL}${1}.asc
+  curl -Os ${URL}${1}.sha256
+  curl -Os ${URL}${1}.asc.sha256
 }
 
 verify() {
