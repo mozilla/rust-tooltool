@@ -1,0 +1,4 @@
+channel-rust-*
+*.gz
+*.asc
+*.sha256
