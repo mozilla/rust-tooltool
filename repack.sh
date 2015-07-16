@@ -15,7 +15,7 @@ verify() {
 
 strip_trailing_whitespace() {
   echo "cleaning $1 ..."
-  cat $1 | sed -e 's/\w*$//' > $1+ && mv $1+ $1
+  cat $1 | sed -e 's/\w*\$//' > $1+ && mv $1+ $1
 }
 
 verify ${IDX}
