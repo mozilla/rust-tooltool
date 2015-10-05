@@ -11,6 +11,7 @@ verify() {
   shasum -c $1.sha256
   shasum -c $1.asc.sha256
   gpg --verify $1.asc
+  keybase verify $1.asc
 }
 
 strip_trailing_whitespace() {
