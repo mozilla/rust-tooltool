@@ -32,6 +32,6 @@ for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   tar cJf ../${_target} rustc/*
   rm -rf ${_base}
   cd ..
-  ${TOOLTOOL} add --visibility=public ${_target}
+  ${TOOLTOOL} add --visibility=public --unpack ${_target}
 done
 strip_trailing_whitespace manifest.tt
