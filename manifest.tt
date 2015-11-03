@@ -64,13 +64,6 @@
 "size": 66901700
 },
 {
-"size": 587,
-"visibility": "public",
-"digest": "c1521bd9fc10a529aa32a8c64fe23dd84515ad650475dadd5befc69d77e9e5150ae343b75403e899926b49e78162042c946f57c0c98328c23a29afac2fcc11d7",
-"algorithm": "sha512",
-"filename": "setup.sh"
-},
-{
 "size": 101601508,
 "visibility": "public",
 "digest": "310ef5b4d1c2ba3904606305859c538536bf372b7cc95597c8c511cd3ddf0558f2bce44c0d81be1cb39103101a34836c0274988bc110bf12902f484e27bdc781",
