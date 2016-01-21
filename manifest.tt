@@ -2,65 +2,65 @@
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-x86_64-unknown-linux-gnu.tar.xz",
+"filename": "rustc-1.6.0-x86_64-unknown-linux-gnu.tar.xz",
 "unpack": true,
-"digest": "c2951bf5ad16dc741fc688c35b6443220614743176a5c7419a117584ce2f26410d570ff62e2e70b6c17f32a634280ad2f6a5fbc8ae36e1e252004e19cf86ff82",
-"size": 29623332
+"digest": "0bf81b1f9e35f7ac407b23a3bdfb24b451e18287e68e0bbca489ec2eb2f71477df0131dee91541b60010e27dbad9a22efc9b8d5382638822a51ef1b1a9bbb5fc",
+"size": 30032180
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-x86_64-pc-windows-msvc.tar.xz",
+"filename": "rustc-1.6.0-x86_64-pc-windows-msvc.tar.xz",
 "unpack": true,
-"digest": "c20f98e806fa3388776dd40f160ec7bdfb746f1300edfbea4cd9e1ee0afd1d7fe36418e2c463b0543be3cf0b733df0ccf63b09270442c948b7ca31209694f82f",
-"size": 25236200
+"digest": "e40c78f4d58925dd4f16f8f95a1ecbdf9389cb6fc5e7d3eac2727da563f74161c797cd5a97aea1c49270d3e07392a80debe1eafbd89885b6d19996e0215b4f62",
+"size": 25487036
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-x86_64-pc-windows-gnu.tar.xz",
+"filename": "rustc-1.6.0-x86_64-pc-windows-gnu.tar.xz",
 "unpack": true,
-"digest": "0c2f304510969db2075b6e9708201d783218ccfd7027d5efbb3464d8d911e43699d2711bea757c5fca2fe38372440ef0a489c79ff8ffb983195ef75122fb8d5a",
-"size": 29964012
+"digest": "f5c807d18e9455cea32562e26c44488fce3cd99c2b90b6b88a65d1a157f90e615621086f432ea364b3715f35c4ec4239a16b9e968792d4975355fad8a7121d6d",
+"size": 30247628
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-x86_64-apple-darwin.tar.xz",
+"filename": "rustc-1.6.0-x86_64-apple-darwin.tar.xz",
 "unpack": true,
-"digest": "62b8300bbf58bf01e2928fb2de6c8b3abc6709aababff2b19ffa58811680051c304bdae93f2d3cbfda238f40b17a5d511b7dcf08700a522431c6ff5b34234b52",
-"size": 26768216
+"digest": "126cb16e0f8672a30a03acea031e005c04c46aae154abea3ec0f0497c784818387ed3cde687cf788c4c48e11e58afc92b75c4b2948eba89ca5c66c00a5230c0d",
+"size": 27214956
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-i686-unknown-linux-gnu.tar.xz",
+"filename": "rustc-1.6.0-i686-unknown-linux-gnu.tar.xz",
 "unpack": true,
-"digest": "209a99dfb1d223a0bf4ccde3ae19cd1dbfbc5503353a64095a2c0019188209c352c71558421008f8bc7ac9bef6dc7d8f56d191cce9d1698b129a5ae34aa42798",
-"size": 30017072
+"digest": "7767023ca79827b507cd9577187fe31da50192f175733550e474e3cd8c777a151d6292fd9973816fa914c7cdbb2f5495209aebafe619a272ccb5585f255ea6ec",
+"size": 30460532
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-i686-pc-windows-msvc.tar.xz",
+"filename": "rustc-1.6.0-i686-pc-windows-msvc.tar.xz",
 "unpack": true,
-"digest": "866c7fcc5293ab3ddabc4d610174da49b1788e259d58288f9796d38da9365cefebfa1a036b52a8afde67ccb2b93498d9ae3da2e4e0f9532cc0e0a58a27b4cdb9",
-"size": 22864300
+"digest": "05f5ad8858720b8b8e37a1927d3b70e9e0eb5444f307f130cbb2aa897b68260cffb3da8f78d5916ed158db22de8e9539699c6bc1d096f5b95bb1cb93a8131205",
+"size": 23365800
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-i686-pc-windows-gnu.tar.xz",
+"filename": "rustc-1.6.0-i686-pc-windows-gnu.tar.xz",
 "unpack": true,
-"digest": "36dd274d3957e59e6bd37d1410f5f957480f0da82c8a3e052772b2a1d58bf26cdb8f6431696952776c875e96e18de8c809b6f3b6d1a16aa1cc9c9c0960937d1d",
-"size": 30214204
+"digest": "a97b144165c612b351e62de8ec3c32278bbd8330d7a8ef075389a516b66f49ae5b33846c04a022e63321027b240b4dd626d37bcca858b98e2e023b11525551c3",
+"size": 30679020
 },
 {
 "algorithm": "sha512",
 "visibility": "public",
-"filename": "rustc-1.5.0-i686-apple-darwin.tar.xz",
+"filename": "rustc-1.6.0-i686-apple-darwin.tar.xz",
 "unpack": true,
-"digest": "8429c608221dd98ef85797a6212b3157685416c270c2aea3fccd181415b17151958be6dd3ad5a9765a7f747ab7c0d715ee34d9d1bb840732c4126aab7f6713ff",
-"size": 26558884
+"digest": "bc5cb5d34c2be47c215cd0b05aee0ceab4568462d06ff2bac7a1a62d770a5956b38b3cdace3e22d31da0ec92e81081ce7ab56825c709ec5545d6ce71cdb0deb0",
+"size": 27024836
 }
 ]
