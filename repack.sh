@@ -23,13 +23,21 @@ verify ${IDX}
 for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
   verify ${pkg}
   _base=${pkg%.tar.gz}
-  _target=rustc-${_base#rust-}.tar.xz
+  case ${pkg} in
+    *-apple-darwin*|*-msvc*)
+      _target=rustc-${_base#rust-}.tar.bz2
+      tarflag=j
+      ;;
+    *)
+      _target=rustc-${_base#rust-}.tar.xz
+      tarflag=J
+  esac
   rm -rf ${_base}
   echo "unpacking ${pkg}"
   tar xf ${pkg}
   cd ${_base}
   echo "repacking ${_base}/rustc as ${_target}"
-  tar cJf ../${_target} rustc/*
+  tar c${tarflag}f ../${_target} rustc/*
   rm -rf ${_base}
   cd ..
   ${TOOLTOOL} add --visibility=public --unpack ${_target}
