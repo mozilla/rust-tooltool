@@ -1,7 +1,9 @@
 #!/bin/sh
 
+set -e
+
 URL=https://static.rust-lang.org/dist/
-IDX=channel-rust-stable
+IDX=channel-rustc-stable
 
 fetch() {
   echo "fetching $1 ..."

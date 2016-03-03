@@ -1,9 +1,11 @@
 #!/bin/sh
 
-# Repack just the rustc subtree from rust releases
-# and add them to the manifest.
+set -e
 
-IDX=channel-rust-stable
+# Download, install and repack rustc and the corresponding
+# std library release builds and add them to the manifest.
+
+IDX=channel-rustc-stable
 TOOLTOOL="python ../build-tooltool/tooltool.py"
 
 verify() {
@@ -15,25 +17,40 @@ verify() {
 }
 
 verify ${IDX}
-for pkg in $(cat ${IDX} | grep 'tar\.gz$'); do
+for pkg in $(cat ${IDX} | grep 'rustc-.*\.tar\.gz$'); do
   verify ${pkg}
+  std=rust-std-${pkg#rustc-}
+  verify ${std}
   _base=${pkg%.tar.gz}
   case ${pkg} in
     *-apple-darwin*|*-msvc*)
-      _target=rustc-${_base#rust-}.tar.bz2
+      _target=${_base}.tar.bz2
       tarflag=j
       ;;
     *)
-      _target=rustc-${_base#rust-}.tar.xz
+      _target=${_base}.tar.xz
       tarflag=J
   esac
+  rm -rf rustc
+  mkdir rustc
+
   rm -rf ${_base}
   echo "unpacking ${pkg}"
   tar xf ${pkg}
-  cd ${_base}
-  echo "repacking ${_base}/rustc as ${_target}"
-  tar c${tarflag}f ../${_target} rustc/*
+  echo "installing ${pkg}"
+  ${_base}/install.sh --prefix=$PWD/rustc --disable-ldconfig
   rm -rf ${_base}
-  cd ..
+
+  echo "unpacking ${std}"
+  _stdbase=${std%.tar.gz}
+  tar xf ${std}
+  echo "installing ${std}"
+  ${_stdbase}/install.sh --prefix=$PWD/rustc --disable-ldconfig
+  rm -rf ${_stdbase}
+
+  echo "repacking ${_target}"
+  tar c${tarflag}f ${_target} rustc/*
+  rm -rf rustc
+
   ${TOOLTOOL} add --visibility=public --unpack ${_target}
 done
